@@ -2,5 +2,5 @@
 # Ref: aka.ms/functions-azure-monitor-python
 # azure-monitor-opentelemetry
 
-azure-functions
-pymupdf
+azure-functions>=1.18.0
+PyMuPDF>=1.23.0

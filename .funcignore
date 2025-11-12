@@ -7,7 +7,5 @@ local.settings.json
 test
 .venv
 *.pdf
-test_*.sh
-function_app_blob.py
-function_app_direct.py
-extensions.json
+__pycache__
+.DS_Store
