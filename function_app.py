@@ -39,7 +39,9 @@ def compress_pdf(req: func.HttpRequest) -> func.HttpResponse:
             )
 
         # Cria um arquivo temporário para o PyMuPDF processar
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp_file:
+        with tempfile.NamedTemporaryFile(
+            delete=False, suffix=".pdf"
+        ) as temp_file:
             temp_file.write(pdf_content)
             temp_path = temp_file.name
 
@@ -50,11 +52,14 @@ def compress_pdf(req: func.HttpRequest) -> func.HttpResponse:
             logging.info("Starting compression...")
             compressed_pdf = reduce_pdf_size(
                 input_pdf=temp_path,
-                skip_first=req.params.get("skip_first", "true").lower() == "true",
+                skip_first=req.params.get("skip_first", "true").lower()
+                == "true",
                 skip_last=req.params.get("skip_last", "true").lower() == "true",
             )
 
-            logging.info(f"Compression completed. Size: {len(compressed_pdf)} bytes")
+            logging.info(
+                f"Compression completed. Size: {len(compressed_pdf)} bytes"
+            )
 
             # Verifica o tamanho antes de retornar
             if len(compressed_pdf) > 50000000:  # 50MB
