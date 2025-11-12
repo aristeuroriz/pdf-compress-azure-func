@@ -191,4 +191,4 @@ def compress_pdf(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(
             f"Erro ao processar o PDF: {str(e)}", status_code=500
         )
-        )
+
