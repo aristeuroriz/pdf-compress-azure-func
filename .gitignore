@@ -3,6 +3,7 @@
 enoteca_catarina.pdf
 test_azure.sh
 test_azure_blob.sh
+*.pdf
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

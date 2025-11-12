@@ -6,8 +6,8 @@ INPUT_PDF="enoteca_catarina.pdf"
 
 echo "Testando Azure Function LOCALMENTE com Blob Storage..."
 RESPONSE=$(curl -s -w "\nHTTP_CODE:%{http_code}" -X POST "$FUNCTION_URL" \
-  -F "file=@$INPUT_PDF" \
-  --max-time 600)
+    -F "file=@$INPUT_PDF" \
+--max-time 600)
 
 echo "=== RESPOSTA COMPLETA ==="
 echo "$RESPONSE"
