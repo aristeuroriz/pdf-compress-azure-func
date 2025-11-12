@@ -4,3 +4,4 @@
 
 azure-functions>=1.18.0
 PyMuPDF>=1.23.0
+azure-storage-blob>=12.19.0
