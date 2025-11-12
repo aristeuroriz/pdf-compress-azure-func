@@ -1,0 +1,12 @@
+{
+  "http": {
+    "routePrefix": "api"
+  },
+  "extensions": {
+    "http": {
+      "maxOutstandingRequests": 200,
+      "maxConcurrentRequests": 100,
+      "dynamicThrottlesEnabled": true
+    }
+  }
+}

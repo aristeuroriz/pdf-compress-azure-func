@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title> Server Error </title>
+    </head>
+    <body>
+        <font color =\"#aa0000\">
+            <h2>Server Error.</h2>
+        </font>
+
+        There was an unexpected error in the request processing.
+    </body>
+</html>
