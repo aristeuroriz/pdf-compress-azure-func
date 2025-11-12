@@ -1,12 +1,7 @@
 <html>
-    <head>
-        <title> Server Error </title>
-    </head>
-    <body>
-        <font color =\"#aa0000\">
-            <h2>Server Error.</h2>
-        </font>
-
-        There was an unexpected error in the request processing.
-    </body>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
 </html>
